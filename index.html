@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sally Student resume, contact info, education, employment">
+    <title>Sally Student resume</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="application-root"></div>
+
+    <!-- REACT STUFF -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">
+        const appRoot = document.querySelector('#application-root'); function SallyResume() { return (
+        <div>
+            <header>
+                <h1>Sally Student resume</h1>
+            </header>
+            <main>
+                <section>
+                    <h2>Contact Info</h2>
+                    <h3>Sally Student</h3>
+                    <figure>
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student wearing a yellow top with zebras on it" />
+                    </figure>
+                    <address>
+        <a href="mailto:sstudent@mail.com" target="_blank">sstudent@mail.com</a><br/>
+        <a href="tel:+18045552368">(804) 555-2368</a>
+      </address>
+                </section>
+                <section>
+                    <h2>Education</h2>
+                    <p>University of Richmond B.S. Computer Science 2015</p>
+                </section>
+                <section>
+                    <h2>Employment History</h2>
+                    <dl>
+                        <dt>Capital One</dt>
+                        <dt>Front End Developer</dt>
+                        <time>May 2017-Present</time>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</p>
+                        <dt>Capital One</dt>
+                        <dt>IT Assistant</dt>
+                        <time>July 2015-May 2017</time>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</p>
+                    </dl>
+                </section>
+            </main>
+        </div>
+
+        ) } ReactDOM.render(
+        <SallyResume/>, appRoot);
+
+    </script>
+
+
+</body>
+
+</html>
